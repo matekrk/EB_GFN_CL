@@ -6,12 +6,12 @@ import os, sys
 import copy
 import time
 import random
-import ipdb
+# import ipdb
 from tqdm import tqdm
 import argparse
 import network
 
-sys.path.append("/home/zhangdh/EB_GFN")
+sys.path.append("/home/mateuszpyla/gflownet/EB_GFN_CL")
 from gflownet import get_GFlowNet
 import utils_data
 

@@ -3,7 +3,7 @@ import torch.utils.data as data_utils
 import torchvision
 
 import numpy as np
-import ipdb
+# import ipdb
 import os
 
 
@@ -19,10 +19,10 @@ def load_dynamic_mnist(args, **kwargs):
 
     # start processing
     from torchvision import datasets, transforms
-    train_loader = torch.utils.data.DataLoader(datasets.MNIST('/home/zhangdh/data', train=True, download=True,
+    train_loader = torch.utils.data.DataLoader(datasets.MNIST('/home/mateuszpyla', train=True, download=True,
           transform=transforms.Compose([transforms.ToTensor()])), batch_size=args.batch_size, shuffle=True)
 
-    test_loader = torch.utils.data.DataLoader(datasets.MNIST('/home/zhangdh/data', train=False,
+    test_loader = torch.utils.data.DataLoader(datasets.MNIST('/home/mateuszpyla', train=False,
          transform=transforms.Compose([transforms.ToTensor()])), batch_size=args.batch_size, shuffle=True)
 
     # preparing data
